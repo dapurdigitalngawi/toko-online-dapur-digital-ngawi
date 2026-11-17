@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dapur Digital Ngawi — Toko Produk Digital, Ebook AI, Spreadsheet UMKM & Jasa Website (Promo 50%)</title>
+  <meta name="description" content="Official Store Dapur Digital Ngawi: Jasa Pembuatan Website Profesional, Ebook 77.777 & 99.999 Prompt AI, Paket UMKM Bisnis, Spreadsheet Otomatis & Panduan AI. Spesial Promo Diskon 50%!" />
+  <style>
+    :root {
+      --green-deep: #072f27;
+      --green-dark: #0d4a3e;
+      --green-main: #146352;
+      --green-mid: #1b7d68;
+      --green-soft: #ecf6f3;
+      --green-border: #c5e0d8;
+      --gold-main: #c8a860;
+      --gold-bright: #dfc078;
+      --gold-dark: #8a6920;
+      --gold-soft: #fbf6ea;
+      --navy: #182230;
+      --text: #2d3748;
+      --muted: #5f6c7b;
+      --bg: #f6f9f8;
+      --white: #ffffff;
+      --red-badge: #dc2626;
+      --red-soft: #fef2f2;
+      --shadow-sm: 0 2px 10px rgba(13, 74, 62, 0.06);
+      --shadow-md: 0 12px 30px rgba(13, 74, 62, 0.11);
+      --shadow-lg: 0 22px 50px rgba(7, 47, 39, 0.18);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    button { font-family: inherit; cursor: pointer; border: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Top Promo Bar */
+    .promo-bar {
+      background: linear-gradient(90deg, var(--gold-main), var(--gold-bright), var(--gold-main));
+      color: var(--green-deep);
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+    .promo-bar span.pill {
+      display: inline-block;
+      background: var(--green-deep);
+      color: var(--gold-bright);
+      padding: 2px 9px;
+      border-radius: 999px;
+      font-size: 11px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--green-border);
+      box-shadow: 0 4px 18px rgba(13, 74, 62, 0.05);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand img {
+      height: 44px;
+      width: auto;
+      border-radius: 6px;
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-name {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: 0.3px;
+      line-height: 1.15;
+    }
+    .brand-sub {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--green-main);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .nav-links a:hover { color: var(--green-main); }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .ig-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1.5px solid var(--green-border);
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--green-dark);
+      background: var(--white);
+      transition: all 0.2s;
+    }
+    .ig-link:hover { border-color: var(--green-main); background: var(--green-soft); }
+    .cart-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 700;
+      transition: transform 0.15s, background 0.2s;
+    }
+    .cart-btn:hover { background: var(--green-main); transform: translateY(-1px); }
+    .cart-count {
+      background: var(--gold-main);
+      color: var(--green-deep);
+      min-width: 21px;
+      height: 21px;
+      padding: 0 6px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Hero */
+    .hero {
+      background: radial-gradient(circle at 85% 20%, rgba(200, 168, 96, 0.18), transparent 45%),
+                  linear-gradient(135deg, var(--green-deep) 0%, var(--green-dark) 58%, #125c4d 100%);
+      color: var(--white);
+      padding: 64px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 168, 96, 0.16);
+      border: 1px solid rgba(200, 168, 96, 0.55);
+      color: var(--gold-bright);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 4.2vw, 48px);
+      font-weight: 900;
+      line-height: 1.13;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span { color: var(--gold-bright); }
+    .hero p.lead {
+      font-size: 16.5px;
+      color: #d6ebe4;
+      max-width: 560px;
+      margin-bottom: 28px;
+      line-height: 1.65;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold-main), var(--gold-bright));
+      color: var(--green-deep);
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(200, 168, 96, 0.28);
+      transition: transform 0.15s, box-shadow 0.2s;
+    }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 14px 28px rgba(200, 168, 96, 0.38); }
+    .btn-outline-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-size: 14.5px;
+      font-weight: 700;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-outline-light:hover { background: rgba(255, 255, 255, 0.16); border-color: var(--white); }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 13px;
+      color: #cce5dd;
+      font-weight: 600;
+    }
+    .trust-item { display: inline-flex; align-items: center; gap: 7px; }
+    .trust-dot {
+      width: 20px; height: 20px; border-radius: 50%;
+      background: rgba(200, 168, 96, 0.22);
+      color: var(--gold-bright);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 900;
+    }
+
+    /* Hero Featured Bundle Card */
+    .hero-card {
+      background: var(--white);
+      color: var(--navy);
+      border-radius: 22px;
+      padding: 18px;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--gold-main);
+      position: relative;
+    }
+    .hero-card-ribbon {
+      position: absolute;
+      top: 28px;
+      left: 28px;
+      z-index: 3;
+      background: var(--red-badge);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 900;
+      padding: 5px 12px;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.35);
+    }
+    .hero-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      cursor: pointer;
+    }
+    .hero-card-title {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 5px;
+    }
+    .hero-card-desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .hero-card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #e6efec;
+    }
+    .price-strike {
+      font-size: 13px;
+      color: #94a3b8;
+      text-decoration: line-through;
+      font-weight: 600;
+    }
+    .price-now {
+      font-size: 23px;
+      font-weight: 900;
+      color: var(--green-dark);
+      line-height: 1.1;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 11px 18px;
+      border-radius: 11px;
+      font-size: 13.5px;
+      font-weight: 800;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--green-main); transform: translateY(-1px); }
+
+    /* Sections */
+    .section { padding: 68px 0; }
+    .section-alt { background: var(--white); border-top: 1px solid #e6efec; border-bottom: 1px solid #e6efec; }
+    .section-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 34px;
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--gold-dark);
+      background: var(--gold-soft);
+      border: 1px solid #ead8ad;
+      padding: 4px 13px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    .section-head h2 {
+      font-size: clamp(25px, 3.2vw, 36px);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .section-head p {
+      font-size: 15.5px;
+      color: var(--muted);
+    }
+
+    /* Filter Bar */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tab-btn {
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 700;
+      background: var(--white);
+      color: var(--text);
+      border: 1.5px solid var(--green-border);
+      transition: all 0.18s;
+    }
+    .tab-btn:hover { border-color: var(--green-main); color: var(--green-dark); }
+    .tab-btn.active {
+      background: var(--green-dark);
+      color: var(--white);
+      border-color: var(--green-dark);
+      box-shadow: 0 6px 16px rgba(13, 74, 62, 0.2);
+    }
+    .search-box {
+      position: relative;
+      min-width: 240px;
+      flex: 0 1 280px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 10px 14px 10px 38px;
+      border-radius: 999px;
+      border: 1.5px solid var(--green-border);
+      background: var(--white);
+      font-size: 13.5px;
+      font-family: inherit;
+      color: var(--navy);
+      outline: none;
+    }
+    .search-box input:focus { border-color: var(--green-main); }
+    .search-icon {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid #dfebe7;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--gold-main);
+    }
+    .card-media {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: var(--green-soft);
+      cursor: pointer;
+    }
+    .card-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+    .product-card:hover .card-media img { transform: scale(1.04); }
+    .badge-discount {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--red-badge);
+      color: var(--white);
+      font-size: 11.5px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(220, 38, 38, 0.3);
+    }
+    .badge-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(7, 47, 39, 0.88);
+      color: var(--gold-bright);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+      backdrop-filter: blur(4px);
+    }
+    .card-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .card-cat {
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--green-mid);
+      margin-bottom: 5px;
+    }
+    .card-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.3;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .card-title:hover { color: var(--green-main); }
+    .card-summary {
+      font-size: 13.2px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .card-perks {
+      list-style: none;
+      margin-bottom: 16px;
+      font-size: 12.5px;
+      color: var(--text);
+    }
+    .card-perks li {
+      padding: 3px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+    }
+    .card-perks li::before {
+      content: "✓";
+      color: var(--green-main);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .card-footer {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid #edf3f1;
+    }
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .save-pill {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--red-badge);
+      background: var(--red-soft);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .card-actions {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px;
+    }
+    .btn-cart-add {
+      padding: 10px 13px;
+      border-radius: 10px;
+      border: 1.5px solid var(--green-border);
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: 13px;
+      font-weight: 800;
+      transition: all 0.15s;
+    }
+    .btn-cart-add:hover { background: #daf0e9; border-color: var(--green-main); }
+    .detail-link {
+      display: block;
+      text-align: center;
+      margin-top: 9px;
+      font-size: 12.2px;
+      font-weight: 700;
+      color: var(--muted);
+      background: transparent;
+      width: 100%;
+    }
+    .detail-link:hover { color: var(--green-dark); text-decoration: underline; }
+
+    /* Website Service Pricing Section */
+    .web-showcase {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 28px;
+      align-items: center;
+      background: linear-gradient(135deg, var(--green-dark), var(--green-deep));
+      color: var(--white);
+      padding: 26px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      border: 1.5px solid rgba(200, 168, 96, 0.45);
+    }
+    .web-showcase img {
+      border-radius: 14px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+    .web-showcase h3 {
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .web-showcase p {
+      color: #d4eae3;
+      font-size: 14.5px;
+      margin-bottom: 18px;
+    }
+    .web-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .web-badges span {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold-bright);
+    }
+
+    .web-tiers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .tier-card {
+      background: var(--bg);
+      border: 1.5px solid var(--green-border);
+      border-radius: 18px;
+      padding: 22px 18px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tier-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .tier-card.popular {
+      background: var(--white);
+      border: 2.5px solid var(--green-main);
+      box-shadow: var(--shadow-md);
+    }
+    .popular-tag {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold-main);
+      color: var(--green-deep);
+      font-size: 11px;
+      font-weight: 900;
+      padding: 3px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .tier-name {
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .tier-for {
+      font-size: 12.2px;
+      color: var(--muted);
+      margin-bottom: 14px;
+      min-height: 36px;
+    }
+    .tier-price-box {
+      background: var(--green-soft);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+    .tier-price-now {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--green-dark);
+      line-height: 1.15;
+    }
+    .tier-time {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--green-mid);
+      margin-top: 4px;
+    }
+    .tier-list {
+      list-style: none;
+      font-size: 12.5px;
+      color: var(--text);
+      margin-bottom: 18px;
+      flex: 1;
+    }
+    .tier-list li {
+      padding: 5px 0;
+      border-bottom: 1px dashed #e2ece8;
+      display: flex;
+      gap: 7px;
+      align-items: flex-start;
+    }
+    .tier-list li::before {
+      content: "✓";
+      color: var(--green-main);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    /* Steps Section */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .step-card {
+      background: var(--white);
+      border: 1px solid var(--green-border);
+      border-radius: 16px;
+      padding: 26px 22px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .step-num {
+      width: 46px; height: 46px;
+      border-radius: 14px;
+      background: var(--green-dark);
+      color: var(--gold-bright);
+      font-size: 19px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .step-card h3 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .step-card p {
+      font-size: 13.8px;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--green-deep);
+      color: #cce5dd;
+      padding: 52px 0 32px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 32px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .footer-logo-card {
+      display: inline-block;
+      background: var(--white);
+      padding: 10px 14px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+    .footer-logo-card img { height: 52px; width: auto; }
+    footer h4 {
+      color: var(--gold-bright);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+    }
+    footer ul { list-style: none; font-size: 13.8px; }
+    footer ul li { margin-bottom: 8px; }
+    footer ul a:hover { color: var(--white); text-decoration: underline; }
+    .footer-bottom {
+      padding-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12.8px;
+      color: #9bc4b7;
+    }
+
+    /* Floating WA button */
+    .float-wa {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 85;
+      background: #16a34a;
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 26px rgba(22, 163, 74, 0.38);
+      transition: transform 0.15s;
+    }
+    .float-wa:hover { transform: translateY(-2px); }
+
+    /* Overlays, Modals & Slide Cart */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(7, 32, 27, 0.62);
+      backdrop-filter: blur(4px);
+      z-index: 120;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .overlay.open { display: flex; }
+    .modal {
+      background: var(--white);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 720px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      padding: 26px;
+    }
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      color: var(--navy);
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-close:hover { background: #e2e8f0; }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .detail-grid img {
+      border-radius: 14px;
+      border: 1px solid var(--green-border);
+    }
+    .variant-list {
+      margin: 12px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .variant-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 9px 12px;
+      border: 1.5px solid var(--green-border);
+      border-radius: 10px;
+      font-size: 12.8px;
+      cursor: pointer;
+    }
+    .variant-item.selected {
+      border-color: var(--green-dark);
+      background: var(--green-soft);
+      font-weight: 700;
+    }
+
+    /* Drawer Cart */
+    .drawer-wrap {
+      position: fixed;
+      inset: 0;
+      background: rgba(7, 32, 27, 0.58);
+      backdrop-filter: blur(3px);
+      z-index: 130;
+      display: none;
+      justify-content: flex-end;
+    }
+    .drawer-wrap.open { display: flex; }
+    .drawer {
+      width: 100%;
+      max-width: 440px;
+      height: 100%;
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -12px 0 40px rgba(0, 0, 0, 0.22);
+    }
+    .drawer-head {
+      padding: 18px 20px;
+      background: var(--green-dark);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .drawer-head h3 { font-size: 17px; font-weight: 800; }
+    .drawer-body {
+      padding: 18px 20px;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .cart-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #e8f0ed;
+      align-items: center;
+    }
+    .cart-item img {
+      width: 58px; height: 58px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .cart-item-info { flex: 1; min-width: 0; }
+    .cart-item-title { font-size: 13.5px; font-weight: 800; color: var(--navy); line-height: 1.25; }
+    .cart-item-price { font-size: 13.5px; font-weight: 800; color: var(--green-dark); margin-top: 3px; }
+    .cart-remove {
+      background: var(--red-soft);
+      color: var(--red-badge);
+      font-size: 11.5px;
+      font-weight: 800;
+      padding: 5px 9px;
+      border-radius: 7px;
+    }
+    .summary-box {
+      background: var(--green-soft);
+      border: 1px solid var(--green-border);
+      border-radius: 12px;
+      padding: 14px;
+      margin: 14px 0;
+      font-size: 13.5px;
+    }
+    .sum-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .sum-total {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 8px;
+      border-top: 1px solid var(--green-border);
+      font-size: 16.5px;
+      font-weight: 900;
+      color: var(--green-dark);
+    }
+    .form-group { margin-bottom: 11px; }
+    .form-group label {
+      display: block;
+      font-size: 12.2px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1.5px solid #cbd5e1;
+      font-family: inherit;
+      font-size: 13.5px;
+      color: var(--navy);
+      outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--green-main);
+    }
+    .payment-box {
+      background: #fbf6ea;
+      border: 1px solid #dfcb9d;
+      border-radius: 14px;
+      padding: 15px;
+      margin: 0 0 16px;
+    }
+    .payment-box[hidden] { display: none; }
+    .payment-title { color: var(--green-dark); font-size: 13.5px; font-weight: 900; }
+    .payment-caption { color: #5f6c62; font-size: 12px; line-height: 1.5; margin-top: 8px; }
+    .payment-qr {
+      width: min(100%, 270px);
+      height: auto;
+      background: #fff;
+      border: 1px solid #ede8df;
+      margin: 12px auto 6px;
+      padding: 2px;
+    }
+    .payment-recipient { text-align: center; color: var(--green-deep); font-size: 12.5px; font-weight: 900; }
+    .payment-download {
+      display: block;
+      text-align: center;
+      border: 1px solid #cbb981;
+      color: var(--green-dark);
+      background: #fff;
+      border-radius: 9px;
+      padding: 8px 10px;
+      margin-top: 10px;
+      font-size: 12.5px;
+      font-weight: 800;
+    }
+    .drawer-foot {
+      padding: 16px 20px;
+      border-top: 1px solid #e6efec;
+      background: var(--white);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 76px;
+      right: 20px;
+      z-index: 160;
+      background: var(--navy);
+      color: var(--white);
+      padding: 11px 16px;
+      border-radius: 11px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: all 0.22s;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .web-tiers { grid-template-columns: repeat(2, 1fr); }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-card { max-width: 460px; margin: 0 auto; }
+    }
+    @media (max-width: 768px) {
+      .nav-links, .ig-link { display: none; }
+      .web-showcase { grid-template-columns: 1fr; }
+      .steps-grid, .footer-grid { grid-template-columns: 1fr; }
+      .detail-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .product-grid, .web-tiers { grid-template-columns: 1fr; }
+      .brand-sub { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Promo Banner -->
+  <div class="promo-bar">
+    <span class="pill">PROMO PAMERAN 50%</span>
+    SEMUA PRODUK DIGITAL &amp; JASA PEMBUATAN WEBSITE SETENGAH HARGA — OTOMATIS AKTIF HARI INI!
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <img src="./images/logo-ddn.jpg" alt="Logo Dapur Digital Ngawi" />
+        <div class="brand-text">
+          <span class="brand-name">DAPUR DIGITAL NGAWI</span>
+          <span class="brand-sub">Kolaborasi Digital, Tumbuh Bersama</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#katalog">Ebook &amp; Spreadsheet</a>
+        <a href="#jasa-website">Jasa Website</a>
+        <a href="#cara-beli">Cara Beli</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://instagram.com/dapurdigitalngawi" target="_blank" rel="noopener" class="ig-link">
+          IG @dapurdigitalngawi
+        </a>
+        <button class="cart-btn" onclick="openCart()">
+          <span>Keranjang</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">Official Digital Store • Promo Setengah Harga 50%</div>
+        <h1>Racik Bisnis &amp; Skill Naik Kelas Bersama <span>Dapur Digital Ngawi</span></h1>
+        <p class="lead">
+          Miliki koleksi Ebook AI &amp; Bisnis UMKM, 77.777 &amp; 99.999 Master Prompt AI, Paket Spreadsheet Otomatis, hingga Jasa Pembuatan Website Profesional. Seluruh harga hari ini sudah <strong>dipotong 50% (Setengah Harga)</strong>!
+        </p>
+        <div class="hero-ctas">
+          <a href="#katalog" class="btn-gold">Lihat Katalog Promo 50% ↓</a>
+          <a href="#jasa-website" class="btn-outline-light">Cek 4 Paket Website</a>
+        </div>
+        <div class="trust-row">
+          <div class="trust-item"><span class="trust-dot">✓</span> Akses Instan via Google Drive</div>
+          <div class="trust-item"><span class="trust-dot">✓</span> Sekali Bayar, Pakai Selamanya</div>
+          <div class="trust-item"><span class="trust-dot">✓</span> Pendampingan Tim Lokal Ngawi</div>
+        </div>
+      </div>
+
+      <!-- Featured Super Bundle -->
+      <div class="hero-card">
+        <span class="hero-card-ribbon">DISKON 50% • PALING HEMAT!</span>
+        <img src="./images/09-display-super-bundling.jpg" alt="Super Bundling Digital Dapur Digital Ngawi" onclick="openDetail('bundle-all')" />
+        <div class="hero-card-title">Super Bundling All-in-One (7 Ebook + 5 Spreadsheet UMKM)</div>
+        <div class="hero-card-desc">Borong seluruh 7 Ebook Bisnis/AI (termasuk 77.777 &amp; 99.999 Prompt AI) + 5 Spreadsheet UMKM otomatis dalam 1 folder Google Drive!</div>
+        <div class="hero-card-foot">
+          <div>
+            <div class="price-strike">Normal Rp 398.000</div>
+            <div class="price-now">Rp 199.000</div>
+          </div>
+          <button class="btn-primary" onclick="buyNow('bundle-all')">Ambil Paket 50% →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Products Catalog -->
+  <section class="section" id="katalog">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Katalog Produk Digital • Google Drive</span>
+        <h2>Ebook Bisnis, Master Prompt AI &amp; Spreadsheet UMKM</h2>
+        <p>Pilih produk sesuai kebutuhan usaha atau pengembangan skill Anda. Semua harga sudah mendapatkan potongan <strong>Setengah Harga (50%)</strong> dan dikirim langsung via Google Drive!</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="tabs" id="categoryTabs">
+          <button class="tab-btn active" data-cat="all">Semua Produk (9)</button>
+          <button class="tab-btn" data-cat="prompt">Prompt AI (77.777 &amp; 99.999)</button>
+          <button class="tab-btn" data-cat="ai">Ebook AI &amp; Digital</button>
+          <button class="tab-btn" data-cat="umkm">Bisnis &amp; Spreadsheet UMKM</button>
+          <button class="tab-btn" data-cat="bundle">Super Bundling</button>
+        </div>
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Cari ebook, prompt, spreadsheet..." oninput="renderProducts()" />
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- Website Creation Packages -->
+  <section class="section section-alt" id="jasa-website">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Solusi IT, Web &amp; Digitalisasi</span>
+        <h2>Paket Jasa Pembuatan Website Profesional (Diskon 50%)</h2>
+        <p>Bangun etalase online resmi yang buka 24 jam, tampil meyakinkan di Google, dan terhubung langsung ke WhatsApp usaha Anda. Terima beres sampai siap pakai!</p>
+      </div>
+
+      <div class="web-showcase">
+        <img src="./images/01-display-jasa-website.jpg" alt="Jasa Pembuatan Website Dapur Digital Ngawi" />
+        <div>
+          <h3>Kenapa Bikin Website di Dapur Digital Ngawi?</h3>
+          <p>Tidak perlu pusing urusan teknis domain, server, desain, maupun kata-kata promosi. Semua kami racik rapi sesuai identitas usaha Anda, lengkap dengan panduan mudah dan garansi pendampingan langsung.</p>
+          <div class="web-badges">
+            <span>✓ Gratis Domain &amp; Hosting 1 Thn</span>
+            <span>✓ SSL Aman (HTTPS)</span>
+            <span>✓ Responsif HP &amp; Laptop</span>
+            <span>✓ Tombol Order WhatsApp</span>
+            <span>✓ SEO Dasar Google</span>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:10px;">
+            <a href="https://drive.google.com/file/d/15aUWuaJeX1Ohyg8jsWeJnMlQT73drb5b/view" target="_blank" rel="noopener" class="btn-gold">
+              📄 Buka Katalog PDF Lengkap (Drive)
+            </a>
+            <a href="https://wa.me/62895337640337?text=Halo%20Dapur%20Digital%20Ngawi%2C%20saya%20ingin%20konsultasi%20gratis%20pembuatan%20website%20(Promo%2050%25)." target="_blank" rel="noopener" class="btn-outline-light">
+              💬 Konsultasi Gratis via WA
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="web-tiers" id="webTiersGrid"></div>
+    </div>
+  </section>
+
+  <!-- How to Buy -->
+  <section class="section" id="cara-beli">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Mudah &amp; Cepat</span>
+        <h2>3 Langkah Pembelian Langsung</h2>
+        <p>Tanpa daftar akun yang ribet—pilih produk, kirim pesanan melalui WhatsApp, dan admin akan mengirim akses setelah pembayaran diverifikasi.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Pilih Produk / Paket</h3>
+          <p>Klik <strong>Beli Langsung</strong> atau masukkan beberapa produk sekaligus ke <strong>Keranjang</strong>. Diskon 50% otomatis terhitung.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Isi Email &amp; Kirim ke WA</h3>
+          <p>Masukkan nama &amp; email Google Drive Anda, lalu klik tombol checkout yang langsung terhubung ke WA resmi <strong>0895337640337</strong>.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Bayar &amp; Terima Link Drive</h3>
+          <p>Pilih QRIS saat checkout, transfer <strong>BCA 0670059464 a.n. Irpan Kurniawan</strong>, atau bayar tunai di booth. Setelah pembayaran diverifikasi, admin mengirim akses <strong>Google Drive</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-card">
+            <img src="./images/logo-ddn.jpg" alt="Dapur Digital Ngawi" />
+          </div>
+          <p style="font-size:14px; max-width:380px;">
+            Partner lokal Solusi IT, Pembuatan Website, Jasa Digital UMKM, dan Edukasi Digital &amp; AI di Ngawi. Meracik potensi lokal menjadi pertumbuhan nyata.
+          </p>
+        </div>
+        <div>
+          <h4>Layanan &amp; Produk</h4>
+          <ul>
+            <li><a href="#jasa-website">Jasa Pembuatan Website (4 Paket)</a></li>
+            <li><a href="#katalog">Ebook 77.777 &amp; 99.999 Prompt AI</a></li>
+            <li><a href="#katalog">Ebook Paket UMKM Bisnis</a></li>
+            <li><a href="#katalog">Paket Spreadsheet UMKM 5-in-1</a></li>
+            <li><a href="#katalog">Ebook Sosmed, Afiliator, E-Commerce &amp; Pemula AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hubungi Kami</h4>
+          <ul>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/62895337640337" target="_blank" rel="noopener">0895-3376-40337</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/dapurdigitalngawi" target="_blank" rel="noopener">@dapurdigitalngawi</a></li>
+            <li><strong>Lokasi:</strong> Ngawi, Jawa Timur</li>
+            <li style="margin-top:12px;">
+              <a href="https://wa.me/62895337640337?text=Halo%20Dapur%20Digital%20Ngawi%2C%20saya%20mau%20tanya%20promo%20produk%20%26%20layanan%2050%25!" target="_blank" rel="noopener" class="btn-gold" style="padding:10px 16px; font-size:13px;">
+                Chat WhatsApp Sekarang
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dapur Digital Ngawi — Kolaborasi Digital, Tumbuh Bersama.</span>
+        <span>WA: 0895337640337 • IG: @dapurdigitalngawi</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/62895337640337?text=Halo%20Admin%20Dapur%20Digital%20Ngawi%2C%20saya%20tertarik%20dengan%20promo%20setengah%20harga%20(50%25)!" target="_blank" rel="noopener" class="float-wa">
+    💬 Chat WA 0895-3376-40337
+  </a>
+
+  <!-- Product Detail Modal -->
+  <div class="overlay" id="detailModal" onclick="if(event.target===this)closeDetail()">
+    <div class="modal">
+      <button class="modal-close" onclick="closeDetail()">✕</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+
+  <!-- Order Sent Confirmation Modal -->
+  <div class="overlay" id="confirmModal" onclick="if(event.target===this)closeConfirm()">
+    <div class="modal" style="max-width:520px;">
+      <button class="modal-close" onclick="closeConfirm()">✕</button>
+      <div id="confirmContent"></div>
+    </div>
+  </div>
+
+  <!-- Slide-Over Shopping Cart & Instant Checkout -->
+  <div class="drawer-wrap" id="cartDrawer" onclick="if(event.target===this)closeCart()">
+    <div class="drawer">
+      <div class="drawer-head">
+        <h3>🛒 Keranjang &amp; Checkout (Promo 50%)</h3>
+        <button class="modal-close" style="position:static; width:32px; height:32px;" onclick="closeCart()">✕</button>
+      </div>
+      <div class="drawer-body">
+        <div id="cartItemsList"></div>
+        <div id="checkoutSection" style="display:none;">
+          <div class="summary-box">
+            <div class="sum-row"><span>Subtotal Harga Normal</span><span id="sumNormal" style="text-decoration:line-through; color:#64748b;">Rp 0</span></div>
+            <div class="sum-row" style="color:#dc2626; font-weight:800;"><span>Potongan Promo 50%</span><span id="sumDiscount">-Rp 0</span></div>
+            <div class="sum-total"><span>Total Bayar</span><span id="sumFinal">Rp 0</span></div>
+          </div>
+
+          <div class="form-group" style="margin:16px 0 9px;">
+            <label for="buyerPay">Pilih metode pembayaran</label>
+            <select id="buyerPay" onchange="togglePaymentInfo()">
+              <option value="QRIS">QRIS (scan / unggah gambar)</option>
+              <option value="Transfer BCA">Transfer BCA</option>
+              <option value="Tunai / Bayar di Booth Pameran">Tunai di booth</option>
+            </select>
+          </div>
+
+          <div id="paymentQris" class="payment-box">
+            <div class="payment-title">Scan QRIS untuk membayar</div>
+            <p class="payment-caption">Periksa nama penerima dan masukkan nominal sesuai <strong>Total Bayar</strong>. QRIS ini tidak mengisi nominal otomatis.</p>
+            <img class="payment-qr" src="./images/qris-dapur-digital-ngawi.png" width="769" height="769" alt="QRIS pembayaran Dapur Digital Ngawi" />
+            <div class="payment-recipient">DAPUR DIGITAL NGAWI</div>
+            <p class="payment-caption" style="text-align:center;">Scan dari perangkat lain, atau simpan gambar dan unggah dari galeri jika aplikasi pembayaran Anda mendukung.</p>
+            <a class="payment-download" href="./images/qris-dapur-digital-ngawi-asli.jpg" download="QRIS-Dapur-Digital-Ngawi.jpg">↓ Simpan QRIS asli</a>
+            <p class="payment-caption">Setelah membayar, kirim bukti melalui WhatsApp. Admin akan memverifikasi pembayaran sebelum mengirim akses.</p>
+          </div>
+
+          <div id="paymentBca" class="payment-box" hidden>
+            <div class="payment-title">Transfer BCA</div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap; margin-top:8px;">
+              <div>
+                <div style="font-size:11px; color:#64748b; font-weight:700;">No. Rekening BCA</div>
+                <div style="font-size:19px; font-weight:900; color:#1E2836; letter-spacing:1px;">0670059464</div>
+                <div style="font-size:12.5px; color:#1E2836; font-weight:700; margin-top:2px;">a.n. Irpan Kurniawan</div>
+              </div>
+              <button type="button" onclick="copyBankAccount()" style="background:#146352; color:#fff; border:none; border-radius:8px; padding:9px 14px; font-size:12.5px; font-weight:800; cursor:pointer;">Salin rekening</button>
+            </div>
+            <p class="payment-caption">Transfer sesuai Total Bayar, lalu kirim bukti ke WhatsApp untuk diverifikasi admin.</p>
+          </div>
+
+          <div id="paymentCash" class="payment-box" hidden>
+            <div class="payment-title">Bayar tunai di booth</div>
+            <p class="payment-caption">Tunjukkan ringkasan pesanan kepada tim Dapur Digital Ngawi dan bayar langsung di booth.</p>
+          </div>
+
+          <h4 style="font-size:14px; font-weight:800; color:var(--navy); margin:14px 0 10px;">Data Penerima File Google Drive / Layanan:</h4>
+          <div class="form-group">
+            <label>Nama Lengkap *</label>
+            <input type="text" id="buyerName" placeholder="Contoh: Budi Santoso" />
+          </div>
+          <div class="form-group">
+            <label>Email Google Drive (untuk pengiriman produk) *</label>
+            <input type="email" id="buyerEmail" placeholder="Contoh: namaanda@gmail.com" />
+          </div>
+          <div class="form-group">
+            <label>Nama Usaha / Kampus / Catatan (Opsional)</label>
+            <input type="text" id="buyerNote" placeholder="Contoh: UMKM Kuliner Ngawi / Mahasiswa" />
+          </div>
+        </div>
+      </div>
+      <div class="drawer-foot" id="drawerFoot" style="display:none;">
+        <button class="btn-primary" style="width:100%; padding:14px; font-size:14.5px; background:#15803d;" onclick="submitOrder()">
+          Beli Sekarang via WhatsApp →
+        </button>
+        <div style="text-align:center; font-size:11.5px; color:var(--muted); margin-top:7px;">
+          Terhubung langsung ke WA Resmi 0895-3376-40337 • Akses Google Drive Cepat
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const WA_PHONE = "62895337640337";
+
+    const PRODUCTS = [
+      {
+        id: "ebook-prompt-77777",
+        cat: "prompt",
+        catLabel: "Ebook Prompt AI",
+        badge: "FAVORIT PEMULA",
+        title: "Ebook 77.777 Prompt AI — Starter Edition",
+        image: "./images/03a-display-ebook-prompt-77777.jpg",
+        normalPrice: 58000,
+        promoPrice: 29000,
+        format: "PDF Siap Pakai (Google Drive)",
+        summary: "Koleksi template prompt siap copy-paste + Sistem Matriks Generator 77.777+ kombinasi untuk konten, jualan UMKM, WA & kuliah.",
+        perks: [
+          "Rumus 5 Komponen Prompt Anti-Gagal (P-K-T-G-F)",
+          "Mesin Matriks 77.777+ Kombinasi 20 Bidang Usaha",
+          "Template Konten Sosmed, Copywriting, WA Closing & Karier"
+        ],
+        details: [
+          "Rumus Emas P-K-T-G-F agar jawaban ChatGPT/Gemini/Claude tajam & natural",
+          "Pola Induk & Tabel Matriks Generator 77.777+ Kombinasi (20 Bidang × Audiens × Gaya × Format)",
+          "Prompt Kalender Konten 30 Hari, 25 Hook Video & Carousel 7 Slide",
+          "Prompt Copywriting PAS, AIDA, Paket Bundling & Penanganan 'Kok Mahal?'",
+          "Prompt Admin WhatsApp Business, Google Maps, HPP, SOP UMKM, Excel & Mahasiswa"
+        ]
+      },
+      {
+        id: "ebook-prompt-99999",
+        cat: "prompt",
+        catLabel: "Master Prompt AI Pro",
+        badge: "BEST SELLER",
+        title: "Ebook 99.999 Master Prompt AI — Pro Master Edition",
+        image: "./images/03b-display-ebook-prompt-99999.jpg",
+        normalPrice: 78000,
+        promoPrice: 39000,
+        format: "PDF Edisi Pro (Google Drive)",
+        summary: "Koleksi Master Prompt kelas pro & matriks 99.999+ kombinasi untuk marketing funnel, foto produk studio AI, video viral & otomasi.",
+        perks: [
+          "Advanced Prompting & Sistem Matriks 99.999+ Kombinasi",
+          "Prompt Foto Produk Studio AI, Kemasan & Video Sinematik",
+          "Prompt Funnel, Landing Page, Ads, SEO Marketplace & CS AI"
+        ],
+        details: [
+          "Teknik Pro: Chain-of-Thought, Brand Voice Cloning & 25 Power Modifiers",
+          "Master Prompt Value Ladder Bisnis, Landing Page 9 Seksi & Kampanye Launching 14 Hari",
+          "Master Prompt Foto Produk AI Studio (Kuliner, Skincare, Fashion, Mockup 3D, Kemasan)",
+          "Master Prompt Skrip TikTok/Reels per Detik, B-Roll Video AI & Meta/TikTok Ads",
+          "Master Prompt SEO Shopee/TikTok Shop, Live Affiliate, Knowledge Base CS AI & Analis CFO Excel"
+        ]
+      },
+      {
+        id: "ebook-umkm-bisnis",
+        cat: "umkm",
+        catLabel: "Ebook Bisnis UMKM",
+        badge: "WAJIB UMKM",
+        title: "Ebook Paket UMKM Bisnis: Panduan Usaha Naik Kelas",
+        image: "./images/02-display-ebook-umkm-bisnis.jpg",
+        normalPrice: 98000,
+        promoPrice: 49000,
+        format: "PDF Lengkap (Google Drive)",
+        summary: "Buku pegangan praktis mengubah usaha rumahan jadi brand rapi, untung sehat, mudah ditemukan di Google & banjir repeat order.",
+        perks: [
+          "Fondasi Positioning USP & Anti Perang Harga",
+          "Rumus HPP, Margin Sehat, Bundling & Harga Reseller",
+          "Optimasi Google Maps, Script Closing WA & Peta Aksi 30 Hari"
+        ],
+        details: [
+          "Bab 1: Menentukan Keunggulan Unik (USP) & Mencegah 5 Kebocoran Usaha",
+          "Bab 2: Simulasi Nyata Perhitungan HPP, Margin 40%, Harga Marketplace & Psikologi Bundling",
+          "Bab 3: Etalase Digital Wajib (Google Maps Bisnis, Katalog & Script Closing WA Business, Web)",
+          "Bab 4: Rumus Pelipat Omzet, Sistem Repeat Order, Kolaborasi Lokal & Checklist Eksekusi 30 Hari"
+        ]
+      },
+      {
+        id: "spreadsheet-umkm",
+        cat: "umkm",
+        catLabel: "Paket Spreadsheet UMKM",
+        badge: "5 FILE OTOMATIS",
+        title: "Paket Spreadsheet UMKM 5-in-1 (Excel & Google Sheets)",
+        image: "./images/04-display-paket-spreadsheet-umkm.jpg",
+        normalPrice: 98000,
+        promoPrice: 49000,
+        format: "5 File .XLSX Rumus Otomatis (Google Drive)",
+        summary: "5 template spreadsheet bisnis siap pakai dengan rumus otomatis—bisa dibuka di Excel HP/Laptop maupun Google Sheets!",
+        perks: [
+          "Pembukuan Kas & Laporan Laba Rugi + Grafik Otomatis",
+          "Kalkulator HPP Resep, Harga Marketplace Anti-Boncos & BEP",
+          "Stok Barang, Rekap Order/CRM, Invoice & Kalender Konten + ROAS"
+        ],
+        details: [
+          "File 1: Pembukuan Arus Kas Harian & Laporan Laba Rugi Otomatis + Grafik",
+          "File 2: Kalkulator HPP per Produk, Simulasi Potongan Admin Marketplace & Hitung BEP",
+          "File 3: Manajemen Stok Barang Masuk/Keluar & Peringatan Restock Warna Otomatis",
+          "File 4: Rekap Order Harian, Database Loyalitas Pelanggan (CRM) & Template Invoice Siap Cetak",
+          "File 5: Kalender Konten 30 Hari (Sudah Terisi 30 Ide!) & Kalkulator Budget Iklan ROAS"
+        ],
+        variants: [
+          { id: "spreadsheet-umkm", name: "Paket Lengkap 5-in-1 (Semua 5 File Spreadsheet)", normal: 98000, promo: 49000 },
+          { id: "spr-kas", name: "Satuan: Pembukuan Arus Kas & Laba Rugi UMKM", normal: 30000, promo: 15000 },
+          { id: "spr-hpp", name: "Satuan: Kalkulator HPP, Harga Marketplace & BEP", normal: 30000, promo: 15000 },
+          { id: "spr-stok", name: "Satuan: Manajemen Stok Barang & Inventori UMKM", normal: 30000, promo: 15000 },
+          { id: "spr-crm", name: "Satuan: Rekap Order, CRM Pelanggan & Invoice", normal: 30000, promo: 15000 },
+          { id: "spr-konten", name: "Satuan: Kalender Konten 30 Hari & Kalkulator ROAS", normal: 30000, promo: 15000 }
+        ]
+      },
+      {
+        id: "ebook-sosmed-ai",
+        cat: "ai",
+        catLabel: "Ebook Sosial Media AI",
+        badge: "KONTEN KILAT",
+        title: "Paket Ebook Pengelolaan Sosial Media dengan AI",
+        image: "./images/05-display-ebook-sosmed-ai.jpg",
+        normalPrice: 88000,
+        promoPrice: 44000,
+        format: "PDF Lengkap (Google Drive)",
+        summary: "Rahasia merancang ide, hook Reels/TikTok, carousel IG, dan jadwal konten 30 hari penuh hanya dalam 1 hari kerja dengan AI.",
+        perks: [
+          "Checklist Bio 5 Detik & Rumus 4 Pilar Konten (40-25-20-15)",
+          "Workflow Content Batching 30 Hari dalam 1 Hari",
+          "Struktur Video FYP, Bank Prompt Admin & Cara Baca Insight"
+        ],
+        details: [
+          "Optimasi Profil, Bio Penarik Klik & Strategi Pin Konten Instagram/TikTok",
+          "Tabel Komposisi 4 Pilar Konten agar Akun Tidak Membosankan & Dipercaya",
+          "Jadwal Jam-per-Jam Produksi Konten Sebulan dalam 1 Hari (Content Batching)",
+          "Anatomi Video 30 Detik Anti-Skip + Bank Prompt Khusus Admin Sosmed & Evaluasi Analitik"
+        ]
+      },
+      {
+        id: "ebook-afiliator-ai",
+        cat: "ai",
+        catLabel: "Ebook Affiliate AI",
+        badge: "CUAN KOMISI",
+        title: "Ebook Pengelolaan Afiliator dengan AI (TikTok & Shopee)",
+        image: "./images/06-display-ebook-afiliator-ai.jpg",
+        normalPrice: 98000,
+        promoPrice: 49000,
+        format: "PDF Lengkap (Google Drive)",
+        summary: "Panduan meraih komisi rutin tanpa stok barang (termasuk konten tanpa wajah) + cara brand merekrut & mengelola tim afiliator.",
+        perks: [
+          "Riset Produk Komisi Tinggi & Mudah Pecah Telur",
+          "Formula Skrip Keranjang Kuning (Faceless) & Rundown Live",
+          "Sistem Rekrut, Brief Sampel & Komisi Tim Afiliator Brand"
+        ],
+        details: [
+          "Kriteria Riset Niche & Produk Winning di TikTok Affiliate & Shopee Video",
+          "4 Gaya Video Affiliate Paling Menghasilkan (Termasuk Tanpa Tampil Wajah)",
+          "Panduan Naskah Live Streaming 60 Menit Anti Kehabisan Bahan Bicara",
+          "Strategi Khusus UMKM/Brand Mengelola Puluhan Afiliator + Bank Prompt Affiliate"
+        ]
+      },
+      {
+        id: "ebook-ecommerce-ai",
+        cat: "ai",
+        catLabel: "Ebook E-Commerce AI",
+        badge: "TOKO LARIS",
+        title: "Ebook Pengelolaan E-Commerce & Marketplace dengan AI",
+        image: "./images/07-display-ebook-ecommerce-ai.jpg",
+        normalPrice: 98000,
+        promoPrice: 49000,
+        format: "PDF Lengkap (Google Drive)",
+        summary: "Optimasi toko Shopee, Tokopedia, TikTok Shop & website dengan AI: judul SEO, 7 slide foto katalog, voucher, iklan ROAS & CS.",
+        perks: [
+          "Formula Judul SEO & Blueprint 7 Slide Foto Katalog",
+          "Strategi Harga Coret, Voucher Bertingkat & Kombo Hemat",
+          "Rumus ROAS Iklan Anti-Boncos & Template CS Bintang 5"
+        ],
+        details: [
+          "Rumus Judul Produk SEO agar Tampil di Pencarian Teratas Marketplace",
+          "Panduan Urutan 7 Slide Foto Produk & Deskripsi Peningkat Konversi",
+          "Pengaturan Voucher Toko, Bundling & Kampanye Tanggal Kembar Tanpa Rugi",
+          "Perhitungan ROAS Aman Iklan Marketplace + Bank Prompt E-Commerce & Anti-Retur COD"
+        ]
+      },
+      {
+        id: "ebook-pemula-ai",
+        cat: "ai",
+        catLabel: "Ebook Edukasi AI",
+        badge: "NOL KE PRO",
+        title: "Ebook Pemula AI: Dari Tidak Mengerti Sampai Profesional",
+        image: "./images/08-display-ebook-pemula-ai.jpg",
+        normalPrice: 98000,
+        promoPrice: 49000,
+        format: "PDF Lengkap (Google Drive)",
+        summary: "Panduan bertahap bahasa manusia paling mudah dipahami—dari benar-benar nol sampai mahir memakai AI untuk kerja, kuliah & cuan.",
+        perks: [
+          "Ramah Pemula Tanpa Coding + Peta Alat AI Lengkap",
+          "6 Teknik Kerja Cerdas Hemat 10+ Jam Setiap Minggu",
+          "Workflow Profesional, 5 Peluang Cuan & Roadmap 14 Hari"
+        ],
+        details: [
+          "Level 1: Memahami AI dari Nol & Peta Alat AI Teks, Gambar, Video & Dokumen",
+          "Level 2-3: Perbandingan Prompt Pemula vs Mahir + 6 Teknik Produktivitas Harian",
+          "Level 4: Prompt Chaining, Few-Shot, Membangun Asisten AI Khusus & Keamanan Data",
+          "Level 5: 5 Cara Menghasilkan Uang dari Skill AI + Jadwal Latihan Praktik 14 Hari"
+        ]
+      },
+      {
+        id: "bundle-all",
+        cat: "bundle",
+        catLabel: "Super Bundling All-in-One",
+        badge: "PALING UNGGUL",
+        title: "Super Bundling Semua Produk Digital (7 Ebook + 5 Spreadsheet)",
+        image: "./images/09-display-super-bundling.jpg",
+        normalPrice: 398000,
+        promoPrice: 199000,
+        format: "7 PDF + 5 XLSX Lengkap (Google Drive)",
+        summary: "Dapatkan SELURUH 7 Ebook (UMKM Bisnis, 77.777 Prompt, 99.999 Master Prompt, Sosmed, Afiliator, E-Commerce, Pemula AI) + 5 Spreadsheet UMKM!",
+        perks: [
+          "Lengkap 12 File Siap Pakai (Total Nilai Satuan Rp 766.000!)",
+          "Harga Paket Normal Rp 398.000 -> Diskon 50% Jadi Rp 199.000",
+          "Akses Praktis Semua Folder Sekaligus + Bonus Konsultasi WA"
+        ],
+        details: [
+          "1. Ebook Paket UMKM Bisnis Naik Kelas Digital",
+          "2. Ebook 77.777 Prompt AI — Starter Edition",
+          "3. Ebook 99.999 Master Prompt AI — Pro Master Edition",
+          "4. Ebook Pengelolaan Sosial Media dengan AI",
+          "5. Ebook Pengelolaan Afiliator dengan AI",
+          "6. Ebook Pengelolaan E-Commerce dengan AI",
+          "7. Ebook Pemula AI dari Nol Sampai Profesional",
+          "8. Seluruh 5 Spreadsheet UMKM Otomatis (Pembukuan, HPP/BEP, Stok, Order/CRM/Invoice, Konten/ROAS)"
+        ]
+      }
+    ];
+
+    const WEB_PACKAGES = [
+      {
+        id: "web-starter",
+        title: "Paket Web Starter (Mini-Web Katalog WA)",
+        shortName: "1. Web Starter",
+        target: "Cocok untuk UMKM pemula, kuliner, jasa & bisnis mahasiswa",
+        normalPrice: 500000,
+        promoPrice: 250000,
+        time: "Estimasi jadi: 3 – 5 hari kerja",
+        image: "./images/01-display-jasa-website.jpg",
+        popular: false,
+        features: [
+          "Landing page 1 halaman responsif HP & Laptop",
+          "Gratis Domain .my.id/.biz.id + Hosting & SSL 1 Thn",
+          "Katalog hingga 15 produk/layanan + harga",
+          "Tombol Order otomatis ke WhatsApp",
+          "Integrasi Google Maps & link sosial media",
+          "Bantuan copywriting dasar + 2x revisi",
+          "Panduan singkat + Garansi maintenance 1 bulan"
+        ]
+      },
+      {
+        id: "web-umkm",
+        title: "Paket Web UMKM Bisnis (Company Profile Pro)",
+        shortName: "2. Web UMKM Bisnis",
+        target: "Cocok untuk UMKM berkembang, CV/PT, klinik, travel & katering",
+        normalPrice: 1250000,
+        promoPrice: 625000,
+        time: "Estimasi jadi: 5 – 7 hari kerja",
+        image: "./images/01-display-jasa-website.jpg",
+        popular: true,
+        features: [
+          "Hingga 5 halaman lengkap (Beranda s.d. Kontak)",
+          "Gratis Domain .COM + Cloud Hosting & SSL 1 Thn",
+          "Upload awal 30 produk + fitur Artikel/Blog",
+          "SEO Dasar + Daftar Google Search & Google Maps",
+          "1 Email Bisnis resmi (info@namausaha.com)",
+          "Floating WhatsApp + Form penawaran + 3x revisi",
+          "Video tutorial admin + Garansi maintenance 3 bulan"
+        ]
+      },
+      {
+        id: "web-toko",
+        title: "Paket Web Toko Online (E-Commerce Pro)",
+        shortName: "3. Web Toko Online",
+        target: "Cocok untuk brand fashion, oleh-oleh, skincare, grosir & ritel",
+        normalPrice: 2250000,
+        promoPrice: 1125000,
+        time: "Estimasi jadi: 7 – 12 hari kerja",
+        image: "./images/01-display-jasa-website.jpg",
+        popular: false,
+        features: [
+          "Sistem Keranjang Belanja, Varian, Voucher & Checkout",
+          "Gratis Domain .COM/.ID + Hosting Bisnis & SSL 1 Thn",
+          "Upload awal 50 produk (tambah mandiri unlimited)",
+          "Hitung Ongkir Otomatis (JNE, J&T, SiCepat, POS)",
+          "Pembayaran QRIS / Transfer & Konfirmasi WA",
+          "3 Email Bisnis + Meta/TikTok Pixel + Laporan Order",
+          "Pelatihan 1-on-1 + Garansi maintenance 6 bulan"
+        ]
+      },
+      {
+        id: "web-instansi",
+        title: "Paket Web Instansi, Sekolah, Desa & Custom",
+        shortName: "4. Web Instansi / Custom",
+        target: "Cocok untuk sekolah, kampus, desa/BUMDes, koperasi & sistem khusus",
+        normalPrice: 3500000,
+        promoPrice: 1750000,
+        time: "Estimasi jadi: 10 – 18 hari kerja",
+        image: "./images/01-display-jasa-website.jpg",
+        popular: false,
+        features: [
+          "Hingga 10+ halaman + Portal Berita, Agenda & Unduhan",
+          "Domain Resmi (.id / .sch.id / .or.id / .desa.id / .co.id)",
+          "Server Cloud cepat + SSL + Backup berkala",
+          "Formulir Pendaftaran / PPDB / Layanan Online (ekspor Excel)",
+          "Akses Multi-Admin + Opsi fitur sistem custom",
+          "Buku panduan SOP + In-house training tim admin",
+          "Garansi teknis & maintenance penuh 6 bulan"
+        ]
+      }
+    ];
+
+    // Build lookup dictionary including spreadsheet single variants
+    const CATALOG_MAP = {};
+    PRODUCTS.forEach(p => {
+      CATALOG_MAP[p.id] = p;
+      if (p.variants) {
+        p.variants.forEach(v => {
+          if (!CATALOG_MAP[v.id]) {
+            CATALOG_MAP[v.id] = {
+              id: v.id,
+              title: v.name,
+              image: p.image,
+              normalPrice: v.normal,
+              promoPrice: v.promo
+            };
+          }
+        });
+      }
+    });
+    WEB_PACKAGES.forEach(w => { CATALOG_MAP[w.id] = w; });
+
+    let activeCat = "all";
+    let cart = [];
+    let selectedVariantId = null;
+
+    function rp(num) {
+      return "Rp " + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.classList.add("show");
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => t.classList.remove("show"), 2400);
+    }
+
+    function renderProducts() {
+      const q = document.getElementById("searchInput").value.trim().toLowerCase();
+      const grid = document.getElementById("productGrid");
+      const list = PRODUCTS.filter(p => {
+        const matchCat = activeCat === "all" || p.cat === activeCat;
+        const matchQ = !q || p.title.toLowerCase().includes(q) || p.summary.toLowerCase().includes(q) || p.catLabel.toLowerCase().includes(q);
+        return matchCat && matchQ;
+      });
+
+      if (!list.length) {
+        grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--muted);">Produk tidak ditemukan. Coba kata kunci lain atau pilih tab "Semua Produk".</div>`;
+        return;
+      }
+
+      grid.innerHTML = list.map(p => `
+        <article class="product-card">
+          <div class="card-media" onclick="openDetail('${p.id}')">
+            <span class="badge-discount">DISKON 50%</span>
+            <span class="badge-tag">${p.badge}</span>
+            <img src="${p.image}" alt="${p.title}" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-cat">${p.catLabel}</div>
+            <h3 class="card-title" onclick="openDetail('${p.id}')">${p.title}</h3>
+            <p class="card-summary">${p.summary}</p>
+            <ul class="card-perks">
+              ${p.perks.map(k => `<li><span>${k}</span></li>`).join("")}
+            </ul>
+            <div class="card-footer">
+              <div class="price-row">
+                <div>
+                  <div class="price-strike">${rp(p.normalPrice)}</div>
+                  <div class="price-now">${rp(p.promoPrice)}</div>
+                </div>
+                <span class="save-pill">Hemat ${rp(p.normalPrice - p.promoPrice)}</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-cart-add" onclick="addToCart('${p.id}')">+ Keranjang</button>
+                <button class="btn-primary" onclick="buyNow('${p.id}')">Beli Langsung</button>
+              </div>
+              <button class="detail-link" onclick="openDetail('${p.id}')">Lihat Rincian Isi Produk ${p.variants ? "&amp; Opsi Satuan" : ""} →</button>
+            </div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderWebTiers() {
+      const grid = document.getElementById("webTiersGrid");
+      grid.innerHTML = WEB_PACKAGES.map(w => `
+        <div class="tier-card ${w.popular ? "popular" : ""}">
+          ${w.popular ? `<span class="popular-tag">★ PALING LARIS UNTUK UMKM</span>` : ""}
+          <div class="tier-name">${w.shortName}</div>
+          <div class="tier-for">${w.target}</div>
+          <div class="tier-price-box">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span class="price-strike">${rp(w.normalPrice)}</span>
+              <span class="save-pill">-50%</span>
+            </div>
+            <div class="tier-price-now">${rp(w.promoPrice)}</div>
+            <div class="tier-time">${w.time}</div>
+          </div>
+          <ul class="tier-list">
+            ${w.features.map(f => `<li><span>${f}</span></li>`).join("")}
+          </ul>
+          <button class="btn-primary" style="width:100%; margin-bottom:7px;" onclick="buyNow('${w.id}')">Pesan Paket Ini</button>
+          <button class="btn-cart-add" style="width:100%;" onclick="addToCart('${w.id}')">+ Masukkan Keranjang</button>
+        </div>
+      `).join("");
+    }
+
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeCat = btn.dataset.cat;
+        renderProducts();
+      });
+    });
+
+    function openDetail(id) {
+      const p = PRODUCTS.find(x => x.id === id);
+      if (!p) return;
+      selectedVariantId = p.id;
+      const variantsHtml = p.variants ? `
+        <div style="margin-top:12px;">
+          <div style="font-size:12.5px; font-weight:800; color:var(--navy); margin-bottom:6px;">Pilih Varian Paket (Semua Diskon 50%):</div>
+          <div class="variant-list" id="variantList">
+            ${p.variants.map((v, i) => `
+              <div class="variant-item ${i === 0 ? "selected" : ""}" onclick="pickVariant('${v.id}', this)">
+                <span>${v.name}</span>
+                <span style="white-space:nowrap;"><s style="color:#94a3b8; font-weight:500; font-size:11.5px;">${rp(v.normal)}</s> <strong style="color:var(--green-dark);">${rp(v.promo)}</strong></span>
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      ` : "";
+
+      document.getElementById("detailContent").innerHTML = `
+        <div class="detail-grid">
+          <div>
+            <img src="${p.image}" alt="${p.title}" />
+            <div style="margin-top:10px; background:var(--green-soft); padding:10px; border-radius:10px; font-size:12px; color:var(--green-dark); font-weight:700; text-align:center;">
+              📁 Format: ${p.format}
+            </div>
+          </div>
+          <div>
+            <span class="kicker" style="margin-bottom:6px;">${p.catLabel} • Diskon 50%</span>
+            <h3 style="font-size:21px; font-weight:900; color:var(--navy); line-height:1.25; margin-bottom:8px;">${p.title}</h3>
+            <p style="font-size:13.5px; color:var(--muted); margin-bottom:12px;">${p.summary}</p>
+            <div style="font-size:13px; font-weight:800; color:var(--navy); margin-bottom:6px;">Apa Saja yang Anda Dapatkan:</div>
+            <ul class="card-perks" style="margin-bottom:12px;">
+              ${p.details.map(d => `<li><span>${d}</span></li>`).join("")}
+            </ul>
+            ${variantsHtml}
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-top:1px solid #e6efec; margin-top:8px;">
+              <div>
+                <div class="price-strike" id="modalStrike">${rp(p.normalPrice)}</div>
+                <div class="price-now" id="modalPrice">${rp(p.promoPrice)}</div>
+              </div>
+              <div style="display:flex; gap:8px;">
+                <button class="btn-cart-add" onclick="addToCart(selectedVariantId); closeDetail();">+ Keranjang</button>
+                <button class="btn-primary" onclick="const vid=selectedVariantId; closeDetail(); buyNow(vid);">Beli Sekarang →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      document.getElementById("detailModal").classList.add("open");
+    }
+
+    function pickVariant(vid, el) {
+      selectedVariantId = vid;
+      document.querySelectorAll("#variantList .variant-item").forEach(x => x.classList.remove("selected"));
+      el.classList.add("selected");
+      const item = CATALOG_MAP[vid];
+      if (item) {
+        document.getElementById("modalStrike").textContent = rp(item.normalPrice);
+        document.getElementById("modalPrice").textContent = rp(item.promoPrice);
+      }
+    }
+
+    function closeDetail() { document.getElementById("detailModal").classList.remove("open"); }
+    function closeConfirm() { document.getElementById("confirmModal").classList.remove("open"); }
+
+    function addToCart(id, silent = false) {
+      const item = CATALOG_MAP[id];
+      if (!item) return;
+      if (!cart.find(c => c.id === id)) {
+        cart.push({ ...item });
+      }
+      updateCartUI();
+      if (!silent) showToast(`✓ "${item.title}" ditambahkan ke keranjang!`);
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(c => c.id !== id);
+      updateCartUI();
+    }
+
+    function buyNow(id) {
+      addToCart(id, true);
+      openCart();
+    }
+
+    function openCart() {
+      updateCartUI();
+      document.getElementById("cartDrawer").classList.add("open");
+    }
+
+    function closeCart() {
+      document.getElementById("cartDrawer").classList.remove("open");
+    }
+
+    function updateCartUI() {
+      document.getElementById("cartCount").textContent = cart.length;
+      const listEl = document.getElementById("cartItemsList");
+      const checkEl = document.getElementById("checkoutSection");
+      const footEl = document.getElementById("drawerFoot");
+
+      if (!cart.length) {
+        listEl.innerHTML = `
+          <div style="text-align:center; padding:44px 16px; color:var(--muted);">
+            <div style="font-size:40px; margin-bottom:10px;">🛒</div>
+            <div style="font-weight:800; color:var(--navy); margin-bottom:6px;">Keranjang masih kosong</div>
+            <p style="font-size:13px; margin-bottom:16px;">Yuk pilih Ebook AI, Spreadsheet UMKM, atau Paket Website dengan Promo Setengah Harga (50%)!</p>
+            <button class="btn-primary" onclick="closeCart()">Lihat Katalog Produk</button>
+          </div>
+        `;
+        checkEl.style.display = "none";
+        footEl.style.display = "none";
+        return;
+      }
+
+      let normalSum = 0, promoSum = 0;
+      listEl.innerHTML = cart.map(item => {
+        normalSum += item.normalPrice;
+        promoSum += item.promoPrice;
+        return `
+          <div class="cart-item">
+            <img src="${item.image}" alt="${item.title}" />
+            <div class="cart-item-info">
+              <div class="cart-item-title">${item.title}</div>
+              <div class="cart-item-price">
+                <s style="color:#94a3b8; font-weight:500; font-size:11.5px; margin-right:5px;">${rp(item.normalPrice)}</s>
+                ${rp(item.promoPrice)}
+              </div>
+            </div>
+            <button class="cart-remove" onclick="removeFromCart('${item.id}')">Hapus</button>
+          </div>
+        `;
+      }).join("");
+
+      document.getElementById("sumNormal").textContent = rp(normalSum);
+      document.getElementById("sumDiscount").textContent = "-" + rp(normalSum - promoSum);
+      document.getElementById("sumFinal").textContent = rp(promoSum);
+      checkEl.style.display = "block";
+      footEl.style.display = "block";
+    }
+
+    function togglePaymentInfo() {
+      const pay = document.getElementById("buyerPay").value;
+      document.getElementById("paymentQris").hidden = pay !== "QRIS";
+      document.getElementById("paymentBca").hidden = pay !== "Transfer BCA";
+      document.getElementById("paymentCash").hidden = pay !== "Tunai / Bayar di Booth Pameran";
+    }
+
+    function submitOrder() {
+      const name = document.getElementById("buyerName").value.trim();
+      const email = document.getElementById("buyerEmail").value.trim();
+      const pay = document.getElementById("buyerPay").value;
+      const note = document.getElementById("buyerNote").value.trim();
+
+      if (!name) {
+        showToast("Mohon isi Nama Lengkap Anda terlebih dahulu.");
+        document.getElementById("buyerName").focus();
+        return;
+      }
+      if (!email || !email.includes("@")) {
+        showToast("Mohon isi alamat Email aktif untuk pengiriman Google Drive.");
+        document.getElementById("buyerEmail").focus();
+        return;
+      }
+
+      const orderId = "DDN-" + Math.floor(1000 + Math.random() * 9000);
+      let normalSum = 0, promoSum = 0;
+      const lines = cart.map((it, idx) => {
+        normalSum += it.normalPrice;
+        promoSum += it.promoPrice;
+        return `${idx + 1}. ${it.title}\n   Normal ${rp(it.normalPrice)} -> *Promo 50%: ${rp(it.promoPrice)}*`;
+      }).join("\n");
+
+      const paymentDetails = pay === "QRIS"
+        ? `*Pembayaran QRIS:*\n• Penerima: DAPUR DIGITAL NGAWI\n• Nominal: ${rp(promoSum)} (diisi manual)\nQR tersedia di checkout. Saya akan mengirim bukti setelah membayar.`
+        : pay === "Transfer BCA"
+          ? `*Pembayaran Transfer BCA:*\n• No. Rekening: 0670059464\n• Atas Nama: Irpan Kurniawan\n• Nominal: ${rp(promoSum)}\nSaya akan mengirim bukti setelah membayar.`
+          : `*Pembayaran tunai:*\nSaya akan membayar ${rp(promoSum)} langsung di booth.`;
+
+      const confirmInstruction = pay === "Tunai / Bayar di Booth Pameran"
+        ? "Kirim pesanan ke WhatsApp dan tunjukkan ringkasannya saat membayar langsung di booth."
+        : "Kirim pesanan ke WhatsApp, lalu kirim bukti pembayaran. Admin akan memverifikasi sebelum memberikan akses produk.";
+
+      const msg =
+`Halo Admin *Dapur Digital Ngawi*! 👋
+Saya ingin memesan produk/layanan berikut (*Promo Setengah Harga 50%*):
+
+*Kode Pesanan:* #${orderId}
+----------------------------------
+${lines}
+----------------------------------
+Total Normal: ~${rp(normalSum)}~
+Hemat Promo 50%: -${rp(normalSum - promoSum)}
+*TOTAL BAYAR: ${rp(promoSum)}*
+
+*Data Pemesan:*
+• Nama: ${name}
+• Email Google Drive: ${email}
+• Metode Bayar: ${pay}${note ? `\n• Catatan: ${note}` : ""}
+
+${paymentDetails}
+
+Mohon konfirmasi pesanannya ya, Kak. Terima kasih! 🙏`;
+
+      const waUrl = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(msg)}`;
+      window._lastOrderMsg = msg;
+
+      closeCart();
+      document.getElementById("confirmContent").innerHTML = `
+        <div style="text-align:center; margin-bottom:14px;">
+          <div style="font-size:40px; margin-bottom:6px;">✅</div>
+          <h3 style="font-size:20px; font-weight:900; color:var(--navy);">Pesanan #${orderId} Siap Dikirim!</h3>
+          <p style="font-size:13.5px; color:var(--muted); margin-top:4px;">${confirmInstruction}</p>
+        </div>
+        <pre style="background:var(--bg); border:1px solid var(--green-border); border-radius:12px; padding:12px; font-size:12px; white-space:pre-wrap; max-height:210px; overflow-y:auto; color:var(--navy); margin-bottom:14px;">${msg.replace(/</g, "&lt;")}</pre>
+        <div style="display:grid; grid-template-columns:1fr; gap:9px;">
+          <a href="${waUrl}" target="_blank" rel="noopener" class="btn-primary" style="padding:14px; font-size:15px; background:#15803d;">
+            💬 Lanjut Kirim ke WhatsApp (0895-3376-40337)
+          </a>
+          <button class="btn-cart-add" onclick="copyOrderText()">📋 Salin Teks Pesanan</button>
+        </div>
+      `;
+      document.getElementById("confirmModal").classList.add("open");
+      window.open(waUrl, "_blank", "noopener");
+    }
+
+    function copyOrderText() {
+      if (navigator.clipboard && window._lastOrderMsg) {
+        navigator.clipboard.writeText(window._lastOrderMsg).then(() => showToast("✓ Format pesanan berhasil disalin!"));
+      }
+    }
+
+    function copyBankAccount() {
+      const acc = "0670059464";
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(acc).then(() => showToast("✓ No. rekening BCA 0670059464 berhasil disalin!"));
+      } else {
+        showToast("No. rekening BCA: " + acc);
+      }
+    }
+
+    renderProducts();
+    renderWebTiers();
+  </script>
+</body>
+</html>

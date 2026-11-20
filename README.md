@@ -2,7 +2,7 @@
 
 Website toko online resmi **Dapur Digital Ngawi** — *Kolaborasi Digital, Tumbuh Bersama*.
 
-## Produk yang Dijual (Promo Setengah Harga 50%)
+## Produk yang Dijual (Promo Diskon 20%)
 
 - **Ebook 77.777 Prompt AI — Starter Edition** (27 halaman + Bank Excel 77.777 prompt)
 - **Ebook 99.999 Master Prompt AI — Pro Master Edition** (25 halaman + Bank Excel 99.999 prompt)

@@ -496,6 +496,29 @@
       border-radius: 999px;
       backdrop-filter: blur(4px);
     }
+    .badge-tag.badge-new {
+      background: var(--gold-main);
+      color: var(--green-deep);
+      font-weight: 900;
+    }
+    .benefit-box {
+      background: var(--gold-soft);
+      border: 1px solid #ead8ad;
+      border-left: 4px solid var(--gold-main);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+    }
+    .benefit-title { font-size: 13px; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+    .benefit-box ol { padding-left: 18px; font-size: 12.8px; color: var(--text); }
+    .benefit-box li { margin-bottom: 5px; line-height: 1.5; }
+    .btn-wa-direct {
+      width: 100%;
+      padding: 13px;
+      font-size: 14.5px;
+      background: #15803d;
+    }
+    .btn-wa-direct:hover { background: #166534; }
     .card-body {
       padding: 18px;
       display: flex;
@@ -1154,7 +1177,7 @@
 
       <div class="filter-bar">
         <div class="tabs" id="categoryTabs">
-          <button class="tab-btn active" data-cat="all">Semua Produk (9)</button>
+          <button class="tab-btn active" data-cat="all">Semua Produk (10)</button>
           <button class="tab-btn" data-cat="prompt">Prompt AI (77.777 &amp; 99.999)</button>
           <button class="tab-btn" data-cat="ai">Ebook AI &amp; Digital</button>
           <button class="tab-btn" data-cat="umkm">Bisnis &amp; Spreadsheet UMKM</button>
@@ -1254,6 +1277,7 @@
             <li><a href="#katalog">Ebook Paket UMKM Bisnis</a></li>
             <li><a href="#katalog">Paket Spreadsheet UMKM 5-in-1</a></li>
             <li><a href="#katalog">Ebook Sosmed, Afiliator, E-Commerce &amp; Pemula AI</a></li>
+            <li><a href="#katalog">Kit Jualan WhatsApp UMKM</a></li>
           </ul>
         </div>
         <div>
@@ -1385,6 +1409,46 @@
     const discountedPrice = (normalPrice) => Math.round(normalPrice * (100 - DISCOUNT_PERCENT) / 100);
 
     const PRODUCTS = [
+      // ===== PRODUK #10 — KIT JUALAN WHATSAPP UMKM (Brief #05, tayang 3 Des 2026) =====
+      {
+        id: "kit-jualan-wa-umkm",
+        cat: "umkm",
+        catLabel: "Kit Jualan WhatsApp",
+        // Label "BARU" tampil 30 hari sejak tayang, lalu otomatis berganti
+        badge: Date.now() < Date.parse("2027-01-02T00:00:00+07:00") ? "BARU" : "KIT UMKM",
+        badgeNew: Date.now() < Date.parse("2027-01-02T00:00:00+07:00"),
+        title: "Kit Jualan WhatsApp UMKM",
+        image: "./images/10-display-kit-jualan-wa-umkm.webp",
+        alt: "Cover Kit Jualan WhatsApp UMKM – Dapur Digital Ngawi",
+        normalPrice: 61000,
+        promoPrice: 48800, // harga final pemilik — tidak dihitung ulang
+        format: "Akses Google Drive — 5 dokumen (Panduan Setup WhatsApp Business, 100 Template Chat, 30 Teks Status WA, 30 Prompt AI, Checklist 7 Hari). Sekali bayar, pakai selamanya.",
+        summary: "Bingung harus balas chat pembeli bagaimana? Kit Jualan WhatsApp UMKM berisi semua teks yang Anda butuhkan untuk jualan lebih rapi lewat WA — tinggal salin, ganti nama produk dan harga, lalu kirim.",
+        description: [
+          "Di dalamnya ada panduan setup WhatsApp Business langkah demi langkah, 100 template chat dari sapaan sampai minta testimoni, 30 teks status siap pasang, 30 prompt AI untuk promo dan broadcast, serta checklist 7 hari jualan lewat status.",
+          "Ditulis dengan bahasa santai khas pedagang Jawa Timur dan contoh produk lokal seperti keripik tempe dan brem. Dikirim lewat Google Drive: sekali bayar, pakai selamanya. Butuh bantuan? Tim Dapur Digital Ngawi bisa ditanya langsung lewat WA atau didatangi di booth."
+        ],
+        benefits: [
+          ["Hemat waktu balas chat", "100 template siap salin, tidak perlu memikirkan kata-kata setiap ada pembeli."],
+          ["WA tampil seperti toko sungguhan", "profil, katalog, dan pesan otomatis tertata dalam sekali duduk."],
+          ["Pesanan tidak tercecer", "label chat dan template follow-up membantu Anda ingat siapa yang belum bayar atau belum dikirim."],
+          ["Status WA jadi etalase harian", "30 teks status dan checklist 7 hari, tinggal pasang."],
+          ["Bikin promo sendiri dengan AI", "30 prompt siap pakai, tanpa harus jago menulis."]
+        ],
+        waText: "Halo DDN, saya mau pesan Kit Jualan WhatsApp UMKM (Rp48.800)",
+        perks: [
+          "100 template chat siap salin",
+          "30 teks status + 30 prompt AI",
+          "Panduan setup WhatsApp Business"
+        ],
+        details: [
+          "Panduan Setup WhatsApp Business langkah demi langkah",
+          "100 Template Chat, dari sapaan sampai minta testimoni",
+          "30 Teks Status WA siap pasang",
+          "30 Prompt AI untuk promo dan broadcast",
+          "Checklist 7 Hari jualan lewat status"
+        ]
+      },
       {
         id: "ebook-prompt-77777",
         cat: "prompt",
@@ -1746,8 +1810,8 @@
         <article class="product-card">
           <div class="card-media" onclick="openDetail('${p.id}')">
             <span class="badge-discount">DISKON ${DISCOUNT_PERCENT}%</span>
-            <span class="badge-tag">${p.badge}</span>
-            <img src="${p.image}" alt="${p.title}" loading="lazy" />
+            <span class="badge-tag${p.badgeNew ? " badge-new" : ""}">${p.badge}</span>
+            <img src="${p.image}" alt="${p.alt || p.title}" loading="lazy" />
           </div>
           <div class="card-body">
             <div class="card-cat">${p.catLabel}</div>
@@ -1829,7 +1893,7 @@
       document.getElementById("detailContent").innerHTML = `
         <div class="detail-grid">
           <div>
-            <img src="${p.image}" alt="${p.title}" />
+            <img src="${p.image}" alt="${p.alt || p.title}" />
             <div style="margin-top:10px; background:var(--green-soft); padding:10px; border-radius:10px; font-size:12px; color:var(--green-dark); font-weight:700; text-align:center;">
               📁 Format: ${p.format}
             </div>
@@ -1838,6 +1902,12 @@
             <span class="kicker" style="margin-bottom:6px;">${p.catLabel} • Diskon ${DISCOUNT_PERCENT}%</span>
             <h3 style="font-size:21px; font-weight:900; color:var(--navy); line-height:1.25; margin-bottom:8px;">${p.title}</h3>
             <p style="font-size:13.5px; color:var(--muted); margin-bottom:12px;">${p.summary}</p>
+            ${p.description ? p.description.map(d => `<p style="font-size:13.5px; color:var(--muted); margin-bottom:12px;">${d}</p>`).join("") : ""}
+            ${p.benefits ? `
+            <div class="benefit-box">
+              <div class="benefit-title">${p.benefits.length} Manfaat untuk Usaha Anda:</div>
+              <ol>${p.benefits.map(b => `<li><strong>${b[0]}</strong> — ${b[1]}</li>`).join("")}</ol>
+            </div>` : ""}
             <div style="font-size:13px; font-weight:800; color:var(--navy); margin-bottom:6px;">Apa Saja yang Anda Dapatkan:</div>
             <ul class="card-perks" style="margin-bottom:12px;">
               ${p.details.map(d => `<li><span>${d}</span></li>`).join("")}
@@ -1853,6 +1923,7 @@
                 <button class="btn-primary" onclick="const vid=selectedVariantId; closeDetail(); buyNow(vid);">Beli Sekarang →</button>
               </div>
             </div>
+            ${p.waText ? `<a class="btn-primary btn-wa-direct" href="https://wa.me/${WA_PHONE}?text=${encodeURIComponent(p.waText)}" target="_blank" rel="noopener">💬 Pesan Lewat WhatsApp</a>` : ""}
           </div>
         </div>
       `;
